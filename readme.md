@@ -1,3 +1,6 @@
+Firstly run ```npm i``` then run `npm start` or `nodemon` to get the Server running. 
+
+
 make a DB with Mongo DB. 
     
     1. create a user/account  then sign in 
