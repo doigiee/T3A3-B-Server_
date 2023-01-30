@@ -1,12 +1,13 @@
-use('Bookings')
+use('PAWFUL')
 
-db.Grooming.insertMany([
+db.Bookings.insertMany([
 {
         name: 'John Smith',
         email: 'smithyjohn@gmail.com',
         phone: '0455669955',
-        Package: 'Package 1',
-        createdAt: new Date(),
+        package: 'Package 1',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Henry',
             gender: 'Male',
@@ -18,8 +19,9 @@ db.Grooming.insertMany([
         name: 'Barbra Blacksheep',
         email: 'zzz123zzz@outlook.com',
         phone: '0422232323',
-        Package: 'Package 3',
-        createdAt: new Date(),
+        package: 'Package 3',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Alex',
             gender: 'Female',
@@ -32,8 +34,9 @@ db.Grooming.insertMany([
         name: 'Rita Red',
         email: 'reddish@live.com',
         phone: '0444555655',
-        Package: 'Package 3',
-        createdAt: new Date(),
+        package: 'Package 3',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Rex',
             gender: 'Male',
@@ -45,8 +48,9 @@ db.Grooming.insertMany([
         name: 'Sammy Smith',
         email: 'watermelonsquash@live.com',
         phone: '0484569963',
-        Package: 'Package 1',
-        createdAt: new Date(),
+        package: 'Package 1',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Walter',
             gender: 'Female',
@@ -58,8 +62,9 @@ db.Grooming.insertMany([
         name: 'Carter Sue',
         email: 'peanutsinfridge@live.com',
         phone: '0445588788',
-        Package: 'Package 2',
-        createdAt: new Date(),
+        package: 'Package 2',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Henry',
             gender: 'Female',
@@ -71,8 +76,9 @@ db.Grooming.insertMany([
         name: 'Theo Walt',
         email: 'disneydreamscometrue@outlook.com',
         phone: '0478877844',
-        Package: 'Package 1',
-        createdAt: new Date(),
+        package: 'Package 1',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Samson',
             gender: 'Male',
@@ -84,8 +90,9 @@ db.Grooming.insertMany([
         name: 'Sandra Hue',
         email: 'colormeblue@live.com',
         phone: '0478788955',
-        Package: 'Package 3',
-        createdAt: new Date(),
+        package: 'Package 3',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Baxter',
             gender: 'Female',
@@ -97,8 +104,9 @@ db.Grooming.insertMany([
         name: 'Sammy Smith',
         email: 'watermelonsquash@live.com',
         phone: '0487823264',
-        Package: 'Package 4',
-        createdAt: new Date(),
+        package: 'Package 4',
+        created: new Date(),
+        date: new Date('2022-12-25T09:00:00'),
         dog: [{
             name: 'Missy',
             gender: 'Male',

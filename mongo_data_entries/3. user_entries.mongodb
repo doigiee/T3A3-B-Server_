@@ -1,8 +1,9 @@
-use('Users')
+use('PAWFUL')
 
-db.Information.insertMany([
+db.Users.insertMany([
   {
         email: 'starfish@outlook.com',
+        password: '123456',
         title: 'Mr',
         firstName: 'Peter',
         lastName: 'Force',
@@ -11,6 +12,7 @@ db.Information.insertMany([
     },
 {
         email: 'watermelonsquash@live.com',
+        password: '112211',
         title: 'Mrs',
         firstName: 'Sammy',
         lastName: 'Smith',
@@ -20,6 +22,7 @@ db.Information.insertMany([
 
 {
         email: 'AmBeR@gmail.com',
+        password: '123456',
         title: 'Mr',
         firstName: 'Billy',
         lastName: 'Bigs',
@@ -29,6 +32,7 @@ db.Information.insertMany([
 
 {
         email: 'Katkake@gmail.com',
+        password: '123',
         title: 'Mr',
         firstName: 'John',
         lastName: 'Poe',
@@ -38,6 +42,7 @@ db.Information.insertMany([
 
 {
         email: 'FernStacks@outlook.com',
+        password: '123',
         title: 'Mrs',
         firstName: 'Fern',
         lastName: 'Stalis',
@@ -47,6 +52,7 @@ db.Information.insertMany([
 
 {
         email: 'Portland@live.com',
+        password: '9874532',
         title: 'Mr',
         firstName: 'Larry',
         lastName: 'Sparks',
@@ -55,6 +61,7 @@ db.Information.insertMany([
 },
 {
         email: 'BoobyBrownSenior@gmail.com',
+        password: 'greengoblin',
         title: 'Mr',
         firstName: 'Bobby',
         lastName: 'Brown',

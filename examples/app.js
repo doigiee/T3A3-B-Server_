@@ -17,5 +17,3 @@ app.get('/categories', async (req, res) => res.send(await CategoryModel.find()))
 app.use('/entries', entryRoutes)
 
 export default app
-
-// 1:43 mern stack part 2

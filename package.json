@@ -1,11 +1,12 @@
 {
   "name": "t3a2-b-server_",
   "version": "1.0.0",
-  "description": "",
+  "description": "Firstly run ```npm i``` then run `npm start` or `nodemon` to get the Server running.",
   "main": "index.js",
   "type": "module",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "example": "examples"
   },
   "dependencies": {
     "cors": "^2.8.5",

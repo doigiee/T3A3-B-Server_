@@ -9,8 +9,8 @@ await InquiryModel.deleteMany()
 console.log('All Bookings deleted')
 
 
-const User = await AppointmentModel.insertMany(appointments)
-console.log('Inserted appointments')
+const User = await UserModel.insertMany(users)
+console.log('Inserted users')
 
 const entries = [
   { category: Appoint[0], content: 'Pikachu!' },
