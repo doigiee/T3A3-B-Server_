@@ -53,6 +53,8 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+// Create a Mongoose model based on the userSchema
+const UserModel = mongoose.model('User', userSchema)
 
 // ... and one for booking ...
 const bookingSchema = new mongoose.Schema({
@@ -99,9 +101,7 @@ const bookingSchema = new mongoose.Schema({
     }],
 });
 
-
-// Create a Mongoose model based on the schema
-const UserModel = mongoose.model('User', userSchema)
+// Create a Mongoose model based on the bookingSchema
 const BookingModel = mongoose.model('Booking', bookingSchema)
 
 

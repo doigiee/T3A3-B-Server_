@@ -1,6 +1,6 @@
 use('PAWFUL')
 
-db.Bookings.insertMany([
+db.bookings.insertMany([
 {
         name: 'John Smith',
         email: 'smithyjohn@gmail.com',

@@ -1,6 +1,6 @@
 use('PAWFUL')
 
-db.Users.insertMany([
+db.users.insertMany([
   {
         email: 'starfish@outlook.com',
         password: '123456',
