@@ -1,0 +1,25 @@
+use('Inquiries')
+
+db.Question.insertMany([
+{
+        name: 'John Smith',
+        email: 'smithyjohn@gmail.com',
+        phone: '0455669955',
+        message: 'I would like to know more about your services, can I book and bring dog in all in the same day?',
+        createdAt: new Date()
+},
+{
+        name: 'Barbra Blacksheep',
+        email: 'zzz123zzz@outlook.com',
+        phone: '0422232323',
+        message: 'Do you take cash or card?',
+        createdAt: new Date()
+},
+{
+        name: 'Sammy Smith',
+        email: 'watermelonsquash@live.com',
+        phone: '0487823264',
+        message: 'can i bring my dog in for a wash and blow dry?',
+        createdAt: new Date()
+}
+])
