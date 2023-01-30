@@ -29,6 +29,10 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    password: {
+        type: String,
+        required: true
+    },
     title: {
         type: String
     },
@@ -52,18 +56,30 @@ const userSchema = new mongoose.Schema({
 
 // ... and one for booking ...
 const bookingSchema = new mongoose.Schema({
-    time: {
+    name: { 
+        type: String,
+        required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+    },
+    phone: {
+        type: String,
+        required: true,
+    },
+    package: {
+        type: String,
+        required: true,
+    },
+    created: {
         type: Date,
-        required: true
+        required: true,
+        default: Date.now()
     },
     date: {
         type: Date,
         required: true
-    },
-    location: {
-        type: String,
-        required: true,
-        default: 'Brisbane : PAWFUL'
     },
     dog: [{
         name: {
@@ -81,35 +97,12 @@ const bookingSchema = new mongoose.Schema({
             type: Number
         }
     }],
-})
-
-// ... and one for inquries ...
-const inquirySchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    phone: {
-        type: String
-    },
-    message: {
-        type: String,
-        required: true
-    },
-    date: {
-        type: Date,
-        default: Date.now()
-    }
 });
+
 
 // Create a Mongoose model based on the schema
 const UserModel = mongoose.model('User', userSchema)
 const BookingModel = mongoose.model('Booking', bookingSchema)
-const InquiryModel = mongoose.model('Inquiry', inquirySchema)
 
 
-export { UserModel, BookingModel, InquiryModel, dbClose }
+export { UserModel, BookingModel, dbClose }
