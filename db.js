@@ -106,9 +106,6 @@ const inquirySchema = new mongoose.Schema({
     }
 });
 
-
-
-
 // Create a Mongoose model based on the schema
 const UserModel = mongoose.model('User', userSchema)
 const BookingModel = mongoose.model('Booking', bookingSchema)
